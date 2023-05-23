@@ -12,15 +12,15 @@ var getAged = function (user, passedTime) {
 }                                               //객체는 참조형을 쓰고 있기에 이 방법으로 해야한다(순회하며 아예 새로운 객체를 만들어야 한다!)
 
 //답안지 정답 요게 더 정확쓰
-// var getAged = function (user, passedTime) {
-//     var newUser = {};
-//     for (var prop in user) {
-//         newUser[prop] = user[prop];
-//     }
+var getAged = function (user, passedTime) {
+    var newUser = {};
+    for (var prop in user) {
+        newUser[prop] = user[prop];
+    }
 
-//     newUser.age += passedTime;
-//     return newUser
-// }                           
+    newUser.age += passedTime;
+    return newUser
+}                           
 
 var agedUser = getAged(user, 6);  //위 user랑 다른놈으로 만들어야 함
 
