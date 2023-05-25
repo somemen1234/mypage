@@ -3,7 +3,6 @@
 //this를 명시적으로 바인딩 한다면 this가 바인딩 됨
 
 Array.prototype.map123 = function(callback, thisArg) {
-
     // map함수에서 return할 결과 배열
     let mappedArr = [];
 
@@ -11,7 +10,6 @@ Array.prototype.map123 = function(callback, thisArg) {
         let mappedValue = callback.call(thisArg || globalThis, this[i]);
         mappedArr[i] = mappedValue;
     }
-
     return mappedArr;
 };                                //마치 맵함수처럼 호출할 수 있게끔
 

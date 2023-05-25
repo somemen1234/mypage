@@ -48,10 +48,10 @@ async function loadJson(url) {
 // }
 
 async function narutoIsNotOtaku() {
-    let title;
+    // let title;
     let res;
     while(1) {
-      title = prompt("애니메이션 제목을 입력하세요.", "naruto");
+      let title = prompt("애니메이션 제목을 입력하세요.", "naruto");
 
       try {
         res = await loadJson(

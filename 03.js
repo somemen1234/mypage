@@ -8,9 +8,8 @@ let newArr = [10, 20, 30].map(function(currentValue, index) {       //첫인자�
 console.log(newArr)
 //-------------------------------------------------------------
 
-let newArr1 = [10, 20, 30].map(function(index, currentValue) {       //첫인자는 배열의 첫값부터 하나하나 / 두번째 인자는 인덱스 0부터 1씩 증가
-    console.log(index, currentValue);
-    return currentValue +5 ;                               //map은 무조건 return을 해야한다!
+let newArr1 = [10, 20, 30].map(function(index, currentValue) {    //내가 사용하고 싶은 대로 사용하는게 아닌 규칙대로 사용
+    return currentValue +5 ;                             
 })
 
 console.log(newArr)         //[5, 6, 7]출력 
